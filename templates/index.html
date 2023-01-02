@@ -1,0 +1,383 @@
+{% autoescape off %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/owlcarusel.min.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="/"><img src="/static/img/uzlogo_white.png" alt="logo"></a>
+            <div class="icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <a href="#city">Shaharlar</a>
+            </li>
+            <li>
+                <a href="#fotos">Fotogalareya</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="owl-carousel main-carousel">
+            {% for carusel in MainPages %}
+            <div class="bg-img" style="background-image: url( {{carusel.img.url}});">
+                <div class="container">
+                    <div class="col-md-7 content">
+                        <h1>{{carusel.title}}</h1>
+                        <h4>{{carusel.content}}</h4>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </main>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="/static/img/Card/zomin.jpg" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                Zominda sayohat
+                            </h5>
+                            <h6>
+                                <span>10%</span> chegirma
+                            </h6>
+                            <a href="">
+                                Sayohat qilish<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                               c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                               C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                               c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                               C457.728,97.71,450.56,86.958,439.296,84.91z"></path>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                               c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6  ">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="/static/img/Card/Samarqand.jpg" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                Samarqanda sayohat
+                            </h5>
+                            <h6>
+                                <span>20%</span> chegirma
+                            </h6>
+                            <a href="">
+                                Sayohat qilish<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                               c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                               C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                               c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                               C457.728,97.71,450.56,86.958,439.296,84.91z"></path>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                               c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="text-center" id="city">
+        <div class="container">
+            <h2>O'zbekiston shaharlari</h2>
+            <p>Sayyohlar uchun mashur yo'nalishlar</p>
+
+            <ul class="filters_menu">
+                <li class="active" data-filter="*">Hammasi</li>
+                {% for category in categories %}
+                <li data-filter=".{{category.slug}}">{{category.title}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="filters-content">
+            <div class="row grid">
+                {% for travel in travels %}
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 all {{travel.category.slug}}">
+                    <div class="box">
+                        <img src="{{travel.img.first.image.url }}" alt="">
+                        <div class="content">
+                            <h4>{{travel.title}}</h4>
+                            <i class="fa-solid fa-plane-departure"></i>
+                            <div class="footer">
+                                {{travel.small_content}}
+                                <a href="/detail/{{travel.id}}" class="btn btn-warning">Batafsil</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <section id="fotos">
+        <h2>Fotogalareya</h2>
+        <p>Sayyohlar uchun mashhur joylar</p>
+        <div class="row">
+            {% for picture in pictures %}
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="box">
+                    <a href=""><img src="{{picture.image.url}}" alt="" style="max-height:200px;"></a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    <section>
+        <h2>Fotogalareya</h2>
+        <p>Sayyohlar uchun mashhur joylar</p>
+        <div class="owl-carousel iframe-carousel">
+            <iframe width="560" height="350" src="https://www.youtube.com/embed/xlKxZweINyE"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="560" height="350" src="https://www.youtube.com/embed/xlKxZweINyE"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="560" height="350" src="https://www.youtube.com/embed/xlKxZweINyE"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+    <section>
+        <h2>Bizning afzaliglarimiz</h2>
+        <p>Bizning sayyohlar uchun maxsus</p>
+        <div class="owl-carousel iframe-carousel">
+            <div class="card text-center">
+                <h3>Transport hizmati</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt officiis hic totam ducimus numquam
+                    eaque, vitae eius dolores praesentium expedita repudiandae, dignissimos sit reprehenderit non
+                    aspernatur? Earum cum accusamus mollitia.</p>
+            </div>
+            <div class="card text-center">
+                <h3>Havfsizlik</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt officiis hic totam ducimus numquam
+                    eaque, vitae eius dolores praesentium expedita repudiandae, dignissimos sit reprehenderit non
+                    aspernatur? Earum cum accusamus mollitia.</p>
+            </div>
+            <div class="card text-center">
+                <h3>5 yulduzli mehmonxona</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt officiis hic totam ducimus numquam
+                    eaque, vitae eius dolores praesentium expedita repudiandae, dignissimos sit reprehenderit non
+                    aspernatur? Earum cum accusamus mollitia.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact mx-md-5" id="contact" >
+        <h1>Contact</h1>
+        <div class="row mx-1">
+            <div class="col-md-8">
+                <form id="contact-form" name="contact-form" action="" method="POST">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="md-form">
+                                <label for="name" class="">Your name</label>
+                                <input type="text" id="name" name="name">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="md-form">
+                                <label for="email" class="">Your email</label>
+                                <input type="text" id="email" name="email">
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form">
+                                <label for="subject" class="">Subject</label>
+                                <input type="text" id="subject" name="subject">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form">
+                                <label for="message">Your message</label>
+                                <textarea type="text" id="message" name="message" rows="1"></textarea>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <button class="btn btn-warning ml-5 mt-3 text-light">Submit</button>
+                </form>
+    
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <ul class="list-unstyled text-center item">
+                    <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                        <p>andijon</p>
+                    </li>
+
+                    <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                        <p>+103</p>
+                    </li>
+
+                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                        <p>Safarbek@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <footer class="footer_section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 footer-col">
+              <div class="footer_contact">
+                <h4>
+                  Contact Us
+                </h4>
+                <div class="contact_link_box">
+                  <a href="">
+                    <i class="fas fa-map-marker" aria-hidden="true"></i>
+                    <span>
+                      Location
+                    </span>
+                  </a>
+                  <a href="">
+                    <i class="fas fa-phone" aria-hidden="true"></i>
+                    <span>
+                      Call +01 1234567890
+                    </span>
+                  </a>
+                  <a href="">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <span>
+                      demo@gmail.com
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 footer-col">
+              <div class="footer_detail">
+                <a href="" class="footer-logo">
+                  Turizm
+                </a>
+                <p>
+                  Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
+                </p>
+                <div class="footer_social">
+                  <a href="">
+                    <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa-brands fa-pinterest" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 footer-col">
+              <h5><a href="" class="text-light">Our market</a></h5>
+              <h4>
+                Opening Hours
+              </h4>
+              <p>
+                Everyday
+              </p>
+              <p>
+                10.00 Am -10.00 Pm
+              </p>
+            </div>
+          </div>
+          <div class="footer-info">
+            <p>
+              © <span id="displayYear">2022</span> All Rights Reserved By
+              <br><br>
+              © Distributed By
+              <a href="" target="_blank">Safarbek</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/owlcarusel.js"></script>
+    <script src="/static/js/isotope.js"></script>
+    <script src="/static/js/script.js"></script>
+</body>
+
+</html>
+{% endautoescape %}

@@ -1,0 +1,260 @@
+{% autoescape off %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/owlcarusel.min.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="scroll">
+        <div class="logo">
+            <a href="/"><img src="/static/img/uzlogo_white.png" alt="logo"></a>
+            <div class="icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <a href="/#city">Shaharlar</a>
+            </li>
+            <li>
+                <a href="/#fotos">Fotogalareya</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <br><br><br>
+    <section class="turizm">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="white-card">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <img src="{{object.img.first.image.url }}" alt="" style="width: 100%;">
+                        </div>
+                        <div class="col-sm-7">
+                            <ul class="about-book">
+                                <li>
+                                    <span>Sayohat shaxri:</span>
+                                    <strong>{{object.title}}</strong>
+                                </li>
+                                <li>
+                                    <span>sayohat davomiyligi:</span>
+                                    <strong>{{object.travel_hours}}Soat</strong>
+                                </li>
+                                <li>
+                                    <span>sayohat narxi:</span>
+                                    <strong>{{object.price}}so'm</strong>
+                                </li>
+                                <li>
+                                    <span>sayohat haqida:</span>
+                                    <br>
+                                    <p>{{object.content}}</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="white-card">
+                    <div class="about-user">
+                        <h2 class="mr-3">buyurtma berish</h2>
+                        <br><br>
+                        <input type="text" id="name" class="form-control" placeholder="Ismingiz">
+                        <br>
+                        <input type="text" id="name" class="form-control" placeholder="Familyangiz">
+                        <br>
+                        <input type="text" id="name" class="form-control" placeholder="telefon raqamiz">
+                        <br>
+                        <button type="submit" class="btn btn-warning">Yuborish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact mx-md-5" id="contact">
+        <h1>Contact</h1>
+        <div class="row mx-1">
+            <div class="col-md-8">
+                <form id="contact-form" name="contact-form" action="" method="POST">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="md-form">
+                                <label for="name" class="">Your name</label>
+                                <input type="text" id="name" name="name">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="md-form">
+                                <label for="email" class="">Your email</label>
+                                <input type="text" id="email" name="email">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form">
+                                <label for="subject" class="">Subject</label>
+                                <input type="text" id="subject" name="subject">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form">
+                                <label for="message">Your message</label>
+                                <textarea type="text" id="message" name="message" rows="1"></textarea>
+                            </div>
+
+                        </div>
+                    </div>
+                    <button class="btn btn-warning ml-5 mt-3 text-light">Submit</button>
+                </form>
+
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <ul class="list-unstyled text-center item">
+                    <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                        <p>andijon</p>
+                    </li>
+
+                    <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                        <p>+103</p>
+                    </li>
+
+                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                        <p>Safarbek@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <footer class="footer_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-col">
+                    <div class="footer_contact">
+                        <h4>
+                            Contact Us
+                        </h4>
+                        <div class="contact_link_box">
+                            <a href="">
+                                <i class="fas fa-map-marker" aria-hidden="true"></i>
+                                <span>
+                                    Location
+                                </span>
+                            </a>
+                            <a href="">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                                <span>
+                                    Call +01 1234567890
+                                </span>
+                            </a>
+                            <a href="">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                <span>
+                                    demo@gmail.com
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <div class="footer_detail">
+                        <a href="" class="footer-logo">
+                            Turizm
+                        </a>
+                        <p>
+                            Necessary, making this the first true generator on the Internet. It uses a dictionary of
+                            over 200 Latin words, combined with
+                        </p>
+                        <div class="footer_social">
+                            <a href="">
+                                <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-pinterest" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <h5><a href="" class="text-light">Our market</a></h5>
+                    <h4>
+                        Opening Hours
+                    </h4>
+                    <p>
+                        Everyday
+                    </p>
+                    <p>
+                        10.00 Am -10.00 Pm
+                    </p>
+                </div>
+            </div>
+            <div class="footer-info">
+                <p>
+                    © <span id="displayYear">2022</span> All Rights Reserved By
+                    <br><br>
+                    © Distributed By
+                    <a href="" target="_blank">Safarbek</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/static/js/jquery.js"></script>
+    <script>
+        $(document).on('click', 'li a, .scrollto', function(e) {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      e.preventDefault();
+      var target = $(this.hash);
+      if (target.length) {
+
+        var scrollto = target.offset().top;
+
+        $('html, body').animate({
+          scrollTop: scrollto
+        }, 1500);
+        return false;
+      }
+    }
+  });
+        $('input, textarea').on('click', function (e) {
+            $(this).parent().find('label').addClass('active')
+        })
+        $('input, textarea').on('blur', function (e) {
+            if ($(this).val() == '') {
+                $(this).parent().find('label').removeClass('active')
+            }
+        })
+
+    </script>
+</body>
+
+</html>
+{% endautoescape %}
